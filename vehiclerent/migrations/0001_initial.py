@@ -21,6 +21,7 @@ class Migration(migrations.Migration):
                 ('Address', models.CharField(max_length=50)),
             ],
         ),
+        
         migrations.CreateModel(
             name='Inventory',
             fields=[
