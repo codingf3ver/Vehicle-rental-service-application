@@ -1,8 +1,10 @@
 # Vehicle-rental-service-application
 
-This application will let you to book a rental vehicle
+The vehicle-rental-service-application will let you to book a vehicle on rent. The application is developed 
+using bootsrap5,MySQL and Python Django Framework
 
-```Home page
+```
+Home page
 ```
 <img src="https://github.com/codingf3ver/images/blob/main/vehicle%20rental%20booking/home.png" style="height:200px, width:400px" >
 <br>
