@@ -1,10 +1,10 @@
 from django.shortcuts import render , redirect
 from django.http import HttpResponse
-from vehiclerent.models import Customer ,Inventory, RentBooking
+from vehiclerent.models import Customer ,Inventory, RentBooking # models or table
 from django.contrib import messages
 
 
-
+# home page of the app
 def home(request):
     return render(request, 'base.html')
 
