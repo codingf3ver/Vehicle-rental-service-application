@@ -1,7 +1,10 @@
 # Vehicle-rental-service-application
 
-The vehicle-rental-service-application will let you to book a vehicle on rent. The application is developed 
-using bootsrap5,MySQL and Python Django Framework
+The vehicle-rental-service-application will let you to book a vehicle on rent. The application will simply take
+customer information and then store it into the MySQL database then user will be veriified first, if it is not 
+registered then asked for registration. Vehicle quantity will automatically updated as booking increases, if it
+has no vehicle then it will notify that vehicle is out of stock. The application is developed using bootstrap5, 
+MySQL database and Python Django Framework.
 
 ```
 Home page
