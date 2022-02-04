@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block title %}Booking{% endblock title %}
+{% block rentactive %}active{% endblock rentactive %}
+    {% block body %}
+    <script>
+        $('.datepicker').datepicker({
+            labelMonthNext: 'Go to the next month',
+            labelMonthPrev: 'Go to the previous month',
+            labelMonthSelect: 'Pick a month from the dropdown',
+            labelYearSelect: 'Pick a year from the dropdown',
+            selectMonths: true,
+            selectYears: true
+            })
+    </script>
+        <div class="container my-5"style="width:900px;margin-left:285px">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark  justify-content-center" style="background-color:#764ca0;border-radius:.25rem; width:875px;margin-left:5px;">
+                        <span class="navbar-brand mb-0 h1">Rental Booking Service</span>
+                      </nav>
+                    
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="#" method="post" >
+                        {% csrf_token %}
+                        <div class="form-group my-3">
+                            <label for="name"style="padding:2px;">Customer Name</label>
+                            <input type="text" class="form-control" id="name" name="CustomerName" placeholder="Enter name" required>
+                        </div>
+                        
+                        <div class="md-form md-outline input-with-post-icon datepicker my-3 mb-4" id="accLabels">
+                            <label for="accessibility-example">Rental Date</label>
+                        <input placeholder="Select date" type="date" name="RentDate" id="accessibility-example" class="form-control" required>
+                         <i class="fas fa-calendar input-prefix" tabindex=0></i>
+                        </div>
+
+                        <div class="md-form md-outline input-with-post-icon datepicker my-3 mx-0" id="accLabels">
+                            <label for="accessibility-example">Return Date</label>
+                        <input placeholder="Select date" type="date" name="ReturnDate"id="accessibility-example" class="form-control" required>
+                         <i class="fas fa-calendar input-prefix" tabindex=0></i>
+                        </div>
+                        <label for="name">Vehicle Type</label> 
+                        <select class="form-select" style="padding:9px;" aria-label="Default select example" name="VehicleType" required>
+                            <option value="Select Vehicle">Select Vehicle</option>
+                                <option value="bike">Bike</option>
+                                <option value="scooter">Scooter</option>
+                                <option value="car">Car</option>
+                                <option value="bus">Bus</option>
+                                <option value="truck">Truck</option>
+                                
+                          </select>
+                            
+                          <button type="submit" class="btn btn-primary my-3" style="background-color:#764ca0;border-radius:.25rem; width:300px;height:45px;margin-left:325px;"><b>Submit</b></button>
+
+                    </form>
+            </div>
+        
+            
+    {% endblock body%}
+    
