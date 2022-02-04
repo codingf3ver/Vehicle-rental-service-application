@@ -80,13 +80,15 @@ WSGI_APPLICATION = 'rentalservice.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+
+# Default database is sqlite but project is in mysql
 DATABASES = {
     'default': {
         
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'rental_management',#os.environ.get('PHOTO_DB_NAME'),
-        'USER': 'test',#os.environ.get('PHOTO_DB_USER'),
-        'PASSWORD': 'sql123',#os.environ.get('PHOTO_PASS'),
+        'USER': 'xxxxx',#os.environ.get('PHOTO_DB_USER'),
+        'PASSWORD': 'xxxxx',#os.environ.get('PHOTO_PASS'),
         'HOST': '127.0.0.1',
         'PORT': '3306',
         

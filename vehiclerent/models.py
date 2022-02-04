@@ -1,8 +1,7 @@
 from django.db import models
 
 
-# Create your models here.
-
+# Customer table to store the cutomer information
 class Customer(models.Model):
     CustomerName_id= models.AutoField(primary_key=True)
     CustomerName = models.CharField(max_length=50 )
@@ -13,6 +12,7 @@ class Customer(models.Model):
     def __str__(self):
         return self.CustomerName
 
+# Vehicles inventory table to add and update stocks
 class Inventory(models.Model):
     VehicleId = models.AutoField(primary_key=True)
     VehicleName = models.CharField(max_length=50)
@@ -27,6 +27,8 @@ class Inventory(models.Model):
     def __str__(self):
         return self.VehicleName
 
+#  Rent booking table for registered customer by combining 
+# both customer and inventory table
 class RentBooking(models.Model):
     BookingId = models.AutoField(primary_key=True)
     VehicleType = models.CharField(max_length=50)
