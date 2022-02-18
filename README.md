@@ -44,3 +44,9 @@ Rental database UI
 <img src="https://github.com/codingf3ver/images/blob/main/vehicle%20rental%20booking/inventorydata.png" style="height:200px, width:400px" >
 <br>
 
+```
+restAPI for vehicle inventory
+```
+<img src="https://github.com/codingf3ver/images/blob/main/vehicle%20rental%20booking/inventoryAPI.png" style="height:200px, width:400px" >
+
+
