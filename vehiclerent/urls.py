@@ -5,4 +5,6 @@ urlpatterns = [
     path('', views.home, name='home'), # home page view
     path('customer/', views.customerCreate, name='customerCreate'), # register customer info page view
     path('rentbooking', views.rentBookingCreate, name='rentBookingCreate'), # rent booking page
+    path('inventory-api/', views.InventoryList.as_view()), # restAPI for inventory
+
 ]
